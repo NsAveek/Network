@@ -33,4 +33,5 @@ dependencies {
 // recyclerview
     compile 'com.android.support:recyclerview-v7:25.0.1'
     testCompile 'junit:junit:4.12'
+
 }
