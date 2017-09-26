@@ -3,6 +3,7 @@ package network.aveek.com.networkconnection.pojo;
 
 import com.google.gson.annotations.SerializedName;
 
+
 @SuppressWarnings("unused")
 public class Item {
 
