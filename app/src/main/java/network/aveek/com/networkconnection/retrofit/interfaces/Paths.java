@@ -11,6 +11,8 @@ import retrofit2.http.Query;
 
 public interface Paths {
 
+    // GET,POST,PUT,MULTIPART
+
     @GET("/answers?order=desc&sort=activity&site=stackoverflow")
     Call<SEResponseSample> getAnswers();
 
