@@ -1,14 +1,14 @@
-package network.aveek.com.networkconnection;
+package network.aveek.com.networkconnection.main;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import network.aveek.com.networkconnection.pojo.SEResponseSample;
-import network.aveek.com.networkconnection.retrofit.interfaces.Paths;
-import network.aveek.com.networkconnection.retrofit.utils.ApiUtils;
+import network.aveek.com.networkconnection.R;
+import network.aveek.com.networkconnection.main.pojo.SEResponseSample;
+import network.aveek.com.networkconnection.main.retrofit.interfaces.Paths;
+import network.aveek.com.networkconnection.main.retrofit.utils.ApiUtils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
