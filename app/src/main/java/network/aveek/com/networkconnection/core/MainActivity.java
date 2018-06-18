@@ -9,11 +9,10 @@ import io.reactivex.schedulers.Schedulers;
 import network.aveek.com.networkconnection.R;
 import network.aveek.com.networkconnection.core.retrofit.SearchRepo;
 import network.aveek.com.networkconnection.core.retrofit.SearchRepoProvider;
-import network.aveek.com.networkconnection.core.retrofit.interfaces.Paths;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Paths paths;
+//    private Paths paths;
     private SearchRepo repoProvider;
 
     @Override
@@ -26,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe( result -> {
+                    // Add Recycler View Data here
                     Log.d("Result", "There are "+ result.getItems().size() +" Java developers in NY");
                 }, error -> {
                     error.printStackTrace();
