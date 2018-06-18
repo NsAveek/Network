@@ -1,4 +1,4 @@
-package network.aveek.com.networkconnection.core
+package network.aveek.com.networkconnection.core.retrofit
 
 import io.reactivex.Observable
 import retrofit2.Retrofit
@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Query
 
 interface GithubApiService {
-    @retrofit2.http.GET("search/users")
+    @GET("search/users")
     fun search(@Query("q") query: String,
                @Query("page") page: Int = 1,
                @Query("per_page") perPage: Int = 20): Observable<Result>

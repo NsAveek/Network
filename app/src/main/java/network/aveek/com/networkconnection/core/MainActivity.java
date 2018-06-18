@@ -3,11 +3,12 @@ package network.aveek.com.networkconnection.core;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.Toast;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 import network.aveek.com.networkconnection.R;
+import network.aveek.com.networkconnection.core.retrofit.SearchRepo;
+import network.aveek.com.networkconnection.core.retrofit.SearchRepoProvider;
 import network.aveek.com.networkconnection.core.retrofit.interfaces.Paths;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
                 }, error -> {
                     error.printStackTrace();
                 });
-
-        Toast.makeText(this, TopicTest.Companion.getData(), Toast.LENGTH_LONG).show();
 
 //        paths = ApiUtils.getPaths();
 //        paths.getAnswers().enqueue(new Callback<SEResponseSample>() {

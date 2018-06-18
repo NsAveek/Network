@@ -1,4 +1,4 @@
-package network.aveek.com.networkconnection.core
+package network.aveek.com.networkconnection.core.retrofit
 
 import com.google.gson.annotations.SerializedName
 

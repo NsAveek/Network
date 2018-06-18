@@ -1,4 +1,4 @@
-package network.aveek.com.networkconnection.core
+package network.aveek.com.networkconnection.core.retrofit
 
 import io.reactivex.Observable
 
