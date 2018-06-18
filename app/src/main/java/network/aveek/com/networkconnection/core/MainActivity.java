@@ -30,21 +30,6 @@ public class MainActivity extends AppCompatActivity {
                     error.printStackTrace();
                 });
 
-//        if (AppFlavor.language.equals("Kotlin")) {
-//            Toast.makeText(this, TopicTest.Companion.getData(), Toast.LENGTH_LONG).show();
-//        }else if (AppFlavor.language.equals("Java")) {
-//            Toast.makeText(this, new TopicTest().getData(), Toast.LENGTH_LONG).show();
-//        }
-//        apiService = new GithubApiService() {
-//            @NotNull
-//            @Override
-//            public Observable<Result> search(@NotNull String query, int page, int perPage) {
-//                return null;
-//            }
-//        };
-
-//        apiService.search()
-
         Toast.makeText(this, TopicTest.Companion.getData(), Toast.LENGTH_LONG).show();
 
 //        paths = ApiUtils.getPaths();
