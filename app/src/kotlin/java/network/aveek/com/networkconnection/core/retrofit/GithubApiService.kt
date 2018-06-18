@@ -14,7 +14,7 @@ interface GithubApiService {
                @Query("per_page") perPage: Int = 20): Observable<Result>
 
 
-    companion object Factory {
+    companion object RetrofitClient {
         fun create(): GithubApiService {
             val retrofit = Retrofit.Builder()
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
